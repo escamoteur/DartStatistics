@@ -26,7 +26,7 @@ namespace DartStatistics
 
             Count(currentDir);
             Console.WriteLine("Total:");
-            Console.WriteLine("LinesBrutto: " + lineCountBrutto + " - LinesNetto: " + lineCountNetto + " - Code chars: " + charCount + " - Classes: " + classCount);
+            Console.WriteLine("Lines Total: " + lineCountBrutto + " - Lines code: " + lineCountNetto + " - Code chars: " + charCount + " - Classes: " + classCount);
 
 
             Console.ReadLine();
@@ -67,7 +67,7 @@ namespace DartStatistics
                     line = reader.ReadLine();
                     _charCount += lineCharCount;
                 }
-                Console.WriteLine("LinesBrutto: " + _lineCountBrutto + " - LinesNetto: " + _lineCountNetto + " - Code chars: " + _charCount + " - Classes: " + _classCount);
+                Console.WriteLine("Lines Total: " + _lineCountBrutto + " - Lines Code: " + _lineCountNetto + " - Code chars: " + _charCount + " - Classes: " + _classCount);
                 lineCountNetto += _lineCountNetto;
                 lineCountBrutto += _lineCountBrutto;
                 classCount += _classCount;
